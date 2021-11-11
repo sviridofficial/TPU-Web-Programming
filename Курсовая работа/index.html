@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>8К93 Свиридов К.А Курсовая работа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1 class="h1_header">Курсовая работа</h1>
+    <h2 class="h2_header">Выполнил студент Свиридов Константин 8К93</h2>
+    <h2 class="h2_header">Вариант: 3</h2>
+</header>
+
+<div class="basicStructure">
+    <h1 class="h1_main">Задание</h1>
+    <p class="p_main"><img class="taskImage" src="images/taskImage.png"/>Разработка скрипта «Кратчайший путь». Для
+        прямоугольной сетки из m * n клеток, обозначенных нулями, и количества клеток, обозначенных числами 1, 2, 3,
+        ...,
+        определите количество ходов для кратчайшего пути, который начинается с 1 и проходит по всем остальным числам в
+        порядке возрастания.
+        Примечания: разрешены только движения по горизонтали и вертикали, все перемещения с одной клетки на соседнюю
+        считаются за одно независимо от направления,
+        числа варьируются от 1 до максимум 9 без повторяющихся или пропущенных чисел.</p>
+    <h1 class="h1_main">Решение</h1>
+    <h2 class="p_solution">Введите числа для получения кратчайшего пути: </h2>
+    <p align="center"><textarea id="textarea"></textarea></p>
+
+    <input type="submit" class="button" onclick="getResult()" value="Получить кратчайший путь">
+    <input type="submit" class="button" onclick="clearData()" value="Очистить поле">
+    <p id="result"></p>
+</div>
+
+<footer>
+    <h2 class="h2_footer">Томский Политехнический Университет</h2>
+    <h2 class="h2_footer">8К93 Свиридов Константин</h2>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
